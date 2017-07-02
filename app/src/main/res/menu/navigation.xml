@@ -7,7 +7,7 @@
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_add_button3"/>
+        android:icon="@drawable/ic_add_button"/>
 
     <item
         android:id="@+id/navigation_user"
