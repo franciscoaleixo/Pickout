@@ -1,10 +1,9 @@
-package com.pcfa.thisorthat;
+package com.pcfa.thisorthat.activities;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.widget.RelativeLayout;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.pcfa.thisorthat.R;
 
 /**
  * Created by PaulaChen on 7/2/2017.
@@ -12,6 +11,7 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
     public class UserActivity extends MainActivity {
 
     public static String TAG = "UserActivity";
+
     private BottomNavigationViewEx user_bnve;
 
     @Override
