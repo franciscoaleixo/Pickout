@@ -1,4 +1,4 @@
-package com.pcfa.thisorthat.fragments;
+package com.pcfa.thisorthat.fragment;
 
 import android.content.Context;
 import android.net.Uri;

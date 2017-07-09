@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#ccc</color>
+    <color name="colorPrimaryDark">#cccccc</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorWhite">#FFFF</color>
-    <color name="colorGray">#ccc</color>
+    <color name="colorGray">#cccccc</color>
     <color name="colorBlack">#000</color>
+    <color name="colorDarkGray">#a9a9a9</color>
+    <color name="colorLightGray">#f7f7f7</color>
+
+    <color name="facebookBlue">#3b5998</color>
 </resources>

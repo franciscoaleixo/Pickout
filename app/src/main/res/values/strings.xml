@@ -11,4 +11,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Login fragment -->
+    <string name="user_hint">Email or username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Log In</string>
+    <string name="login_alt">OR</string>
+    <string name="register_opt">Don\'t have an account? <b>Sign up.</b></string>
+    <string name="forgot_signin">Forgot your user details? <b>Get help here.</b></string>
+    <string name="login_facebook"><b>Log in with Facebook</b></string>
+
 </resources>

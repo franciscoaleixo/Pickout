@@ -1,27 +1,21 @@
-package com.pcfa.thisorthat.activities;
+package com.pcfa.thisorthat.activity;
 
 
-import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.pcfa.thisorthat.R;
-import com.pcfa.thisorthat.adapters.ScreenSlidePagerAdapter;
-import com.pcfa.thisorthat.fragments.HomeFragment;
-import com.pcfa.thisorthat.fragments.NewSurveyFragment;
-import com.pcfa.thisorthat.fragments.UserFragment;
+import com.pcfa.thisorthat.adapter.ScreenSlidePagerAdapter;
+import com.pcfa.thisorthat.fragment.HomeFragment;
+import com.pcfa.thisorthat.fragment.NewSurveyFragment;
+import com.pcfa.thisorthat.fragment.UserFragment;
 
 import java.util.ArrayList;
 

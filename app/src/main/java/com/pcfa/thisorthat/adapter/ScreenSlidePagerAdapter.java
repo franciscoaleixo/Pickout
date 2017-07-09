@@ -1,4 +1,4 @@
-package com.pcfa.thisorthat.adapters;
+package com.pcfa.thisorthat.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
