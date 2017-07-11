@@ -77,7 +77,7 @@ public class LoginFragment extends Fragment {
         startActivity(intent);
         LoginFragment.this.getActivity().finish();
     }
-    
+
 
 
 }
