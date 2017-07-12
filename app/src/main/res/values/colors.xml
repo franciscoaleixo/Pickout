@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#cccccc</color>
     <color name="colorAccent">#95d1fb</color>
@@ -11,4 +12,12 @@
     <color name="colorLightGray">#f7f7f7</color>
 
     <color name="facebookBlue">#3b5998</color>
+
+    <color name="viewPagerBackgnd">#FFF8F8F6</color>
+
+    <!-- App theme colors -->
+    <color name="Violet">#5806b4</color>
+    <color name="BabyBlue">#95d1fb</color>
+    <color name="Blue">#0e15aa</color>
+
 </resources>

@@ -1,51 +1,61 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pcfa.thisorthat.fragment.UserFragment">
+    android:orientation="vertical">
 
     <RelativeLayout
-        android:id="@+id/user_content"
+        android:id="@+id/fragment_user_topPanel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp">
+        android:layout_height="190dp"
+        android:background="@drawable/fragment_user_gradient_and_background">
 
         <ImageView
-            android:id="@+id/user_image"
+            android:id="@+id/fragment_user_topPanel_profile"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_centerHorizontal="true"
-            android:padding="5dp"
-            android:paddingTop="5dp"
-            android:src="@drawable/user_image_example" />
+            android:src="@drawable/user_profile_example" />
 
         <TextView
-            android:id="@+id/user_name"
+            android:id="@+id/fragment_user_topPanel_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_user_topPanel_profile"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/user_image"
-            android:text="@string/user_name" />
+            android:text="@string/user_name"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"/>
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_toRightOf="@id/user_image"
-            android:layout_toEndOf="@id/user_name"
-            android:src="@drawable/genders"     />
+            android:layout_toEndOf="@id/fragment_user_topPanel_username"
+            android:layout_toRightOf="@id/fragment_user_topPanel_profile"
+            android:paddingTop="5dp"
+            android:src="@drawable/genders" />
 
         <TextView
-            android:id="@+id/user_description"
+            android:id="@+id/fragment_user_topPanel_dscpt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/user_name"
+            android:layout_below="@+id/fragment_user_topPanel_username"
+            android:layout_centerHorizontal="true"
             android:padding="5dp"
-            android:text="@string/user_description" />
+            android:text="@string/user_description"
+            android:textColor="@color/colorBlack"
+            android:maxLines="2"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/user_description">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="96dp"
@@ -58,10 +68,10 @@
                 android:layout_height="96dp"
                 android:padding="5dp"
                 android:src="@drawable/icon2" />
-
         </GridLayout>
 
+    </ScrollView>
 
-    </RelativeLayout>
 
-</FrameLayout>
+
+</LinearLayout>
