@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.pcfa.thisorthat.R;
+import com.pcfa.thisorthat.database.connection.ConnectionUsers;
 import com.pcfa.thisorthat.fragment.LoginFragment;
 import com.pcfa.thisorthat.utils.ErrorUtils;
 import com.pcfa.thisorthat.utils.UserUtils;
@@ -33,6 +34,8 @@ import com.pcfa.thisorthat.utils.UserUtils;
         }
         LoginFragment fragment = LoginFragment.newInstance();
         addFragment(fragment, LoginFragment.TAG);
+
+        ConnectionUsers connection = new ConnectionUsers();
     }
 
 

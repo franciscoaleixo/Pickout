@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109946823012",
+    "firebase_url": "https://pickout-13200.firebaseio.com",
+    "project_id": "pickout-13200",
+    "storage_bucket": "pickout-13200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109946823012:android:b546f4b1bb75dd1a",
+        "android_client_info": {
+          "package_name": "com.pcfa.thisorthat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109946823012-ls84on89chkj8uuev7mq67bvl4hql446.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxEe6daAaH1F3qAyvLZ-FLzsjwoPZ-7vY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
