@@ -1,14 +1,17 @@
 package com.pcfa.thisorthat.activity;
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.pcfa.thisorthat.R;
@@ -26,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
 
     private ViewPager mPager;
     private ScreenSlidePagerAdapter mPagerAdapter;
+
+    //NewSurveyFragment
+    private int REQUEST_CAMERA = 0;
+    private int SELECT_FILE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,5 +97,19 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+
+    public void cameraIntent(View v) {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, REQUEST_CAMERA);
+    }
+
+    // TODO: gallery on NewSurveyFragmentlayout
+    public void galleryIntent() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);//
+        startActivityForResult(Intent.createChooser(intent, "Select File"),SELECT_FILE);
     }
 }

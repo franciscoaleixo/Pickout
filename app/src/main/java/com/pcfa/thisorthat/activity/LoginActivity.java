@@ -31,9 +31,10 @@ import com.pcfa.thisorthat.utils.UserUtils;
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
+        }else {
+            LoginFragment fragment = LoginFragment.newInstance();
+            addFragment(fragment, LoginFragment.TAG);
         }
-        LoginFragment fragment = LoginFragment.newInstance();
-        addFragment(fragment, LoginFragment.TAG);
 
         ConnectionUsers connection = new ConnectionUsers();
     }
